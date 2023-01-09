@@ -1,0 +1,17 @@
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\Applications.deps.json
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\Applications.dll
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\Applications.pdb
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\DataMigration.dll
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\ViewModel.dll
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\DataMigration.pdb
+C:\Users\v0510589\source\repos\TestMvc\Applications\bin\Debug\net7.0\ViewModel.pdb
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.csproj.AssemblyReference.cache
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.AssemblyInfoInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.AssemblyInfo.cs
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.csproj.CoreCompileInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.csproj.CopyComplete
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.dll
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\refint\Applications.dll
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\Applications.pdb
+C:\Users\v0510589\source\repos\TestMvc\Applications\obj\Debug\net7.0\ref\Applications.dll

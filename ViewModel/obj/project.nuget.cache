@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aafhxwCF2jprCAZx575NBatHtkkGfl53ZluuYRpjrbT+kCW9BrC4DHGULTyv/rtLIeqSr0gaO1duo9e6P34tvw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\v0510589\\source\\repos\\TestMvc\\ViewModel\\ViewModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\v0510589\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

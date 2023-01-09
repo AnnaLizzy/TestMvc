@@ -1,0 +1,407 @@
+﻿@*@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer localizer*@
+@inject LanguageService language
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title >@language.Getkey("home")</title>
+
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS Style -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <!-- Template CSS Style -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!-- Animate CSS  -->
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+
+    <!-- FontAwesome 4.3.0 Icons  -->
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/source/fontawesome-free-6.2.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="~/source/fontawesome-free-6.2.0-web/css/brands.css">
+    <link rel="stylesheet" href="~/source/fontawesome-free-6.2.0-web/css/solid.css">
+
+    <!-- et line font  -->
+    <link rel="stylesheet" href="~/assets/css/et-line-font/style.css">
+
+    <!-- BXslider CSS  -->
+    <link rel="stylesheet" href="~/assets/css/bxslider/jquery.bxslider.css">
+
+    <!-- Owl Carousel CSS Style -->
+    <link rel="stylesheet" href="~/assets/css/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/css/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="~/assets/css/owl-carousel/owl.transitions.css">
+
+    <!-- Magnific-Popup CSS Style -->
+    <link rel="stylesheet" href="~/assets/css/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/site.css">
+
+  
+
+
+</head>
+
+<body>
+
+    <!-- Preload the Whole Page -->
+    <div id="preloader">
+        <div id="loading-animation">&nbsp;</div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar navbar-default navbar-static-top ">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="~/assets/images/logosystem.png" alt="photo" id="logosystem" width="42px"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navigation-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a class="section-scroll" href="#wrapper">@language.Getkey("home")</a></li>
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" role="button" data-toggle="dropdown" href="#" >@language.Getkey("infor")</a>
+                            <ul class="dropdown-menu" style="right:auto;">
+                                <li><a class="checkRole" href="#" >@language.Getkey("checkrole")</a></li>
+                                <li><a class="checkFile" href="#"> </a></li>
+                                <li><a class="checkId" href="#" >Kiểm tra tiến độ làm thẻ</a></li>
+                                <li><a class="checkId" href="#">Kiểm tra đơn môi trường</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" localize-content>Trung tâm quản lý</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#features-section" localize-content>Trợ giúp</a></li>
+                        <li><a href="#screenshots-section" localize-content>Quản lý hàng ra vào</a></li>
+                        <li><a href="contact.html" localize-content>Liên hệ</a></li>
+                        <li class="dropdown">
+                            <a class=" dropdown-toggle" role="button" data-toggle="dropdown" href="#" title="Manage" localize-content>Quản lý</a>
+                            <ul class="dropdown-menu" style="right:auto;">
+                                <li class="dropdown">
+                                    <a id="manage" class="nav-link text-dark" title="Manage">@User.Identity.Name</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="nav-link text-dark" href="#" title="Manage">Công việc của tôi</a>
+                                </li>
+                                <li class="dropdown">
+                                    <form id="logoutForm" class="form-inline" asp-action="Logout" asp-controller="Account"
+                                          asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"
+                                          method="post">
+                                        <button type="submit" class="nav-link btn btn-link text-dark" style="text-decoration:none;" localize-content>ĐĂNG XUẤT</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" style="right: auto;">
+                                <li class="dropdown-item"><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="vi-VN"><img src="~/assets/images/Flags/VN.png" />&nbsp VN</a></li>
+                                <li class="dropdown-item"><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="zh-CN"><img src="~/assets/images/Flags/CN.png" />&nbsp CN</a></li>
+                                <li class="dropdown-item"><a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US"><img src="~/assets/images/Flags/US.png" />&nbsp US</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div id="wrapper">
+
+        <section>
+            <div id="hero-section" class="landing-hero" data-stellar-background-ratio="0">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+
+                                <div class="hero-text">
+                                    <div class="herolider">
+                                        <ul class="caption-slides">
+
+                                            <li class="caption">
+                                                <h1>Thông báo mới nhất</h1>
+                                                <div class="div-line"></div>
+                                                <p class="hero">Thông báo mới nhất</p>
+                                            </li>
+
+                                            <li class="caption">
+                                                <h1>Thông tin về Covid-19</h1>
+                                                <div class="div-line"></div>
+                                                <p class="hero">增強抵抗力以預防新冠病毒</p>
+                                            </li>
+
+                                            <li class="caption">
+                                                <h1>HIGH QUALITY CODE</h1>
+                                                <div class="div-line"></div>
+                                                <p class="hero">增強抵抗力以預防新冠病毒</p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="hero-btn">
+                                    <a href="#landing-offer" class="btn btn-clean">Read more</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div id="landing-offer" class="pad-sec">
+                <div class="container">
+
+                    <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h2 class="big-title" localize-content>THÔNG BÁO</h2>
+                                <h1 class="big-subtitle" localize-content>
+                                    Ký duyệt đơn của hệ thống quản lý ra vào cổng 114 trên Icivet-Page ATTW chính thức đưa vào sử dụng
+                                </h1>
+                                <hr>
+                                <p class="about-text" localize-content>
+                                    Từ ngày 10/06/2022 thúc đẩy gửi ký duyệt đơn các đơn trên hệ thống quản lý ra vào cổng 114 trên Icivet-Page ATTW chính thức được đưa vào sử dụng. Bắt đầu từ ngày 10/06/2022 đến ngày 01/07/2022 chức năng gửi ký duyệt trên ứng dụng Icivet-Page ATTW và ký duyệt trên Page Zalo ATTW sử dụng đồng thời song song.Từ ngày 01/07/2022 sẽ hủy bỏ gửi ký duyệt các đơn của hệ thống 114 trên Page Zalo ATTW.Sau này chỉ sử dụng Icivet-Page ATTW gửi ký duyệt các đơn trên hệ thống 114.
+                                </p>
+                            </div>
+                        </div> <!-- End row -->
+                    </div> <!-- end title-section -->
+
+                    <div class="offer-boxes">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+                                    <div class="offer-icon">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                    <h4 localize-content>Nhà xưởng Quế Võ (535+Ext.)</h4>
+                                    <p localize-content>
+                                        Cổng A1: 27811
+                                        Cổng A2: 27822
+                                        Cổng A3: 27833
+                                        QVX3: 26228/26227
+                                        QV2: 19070/19069
+                                        Thiên Kim: 26614
+                                        Kho QV3: 25069
+                                    </p>
+                                </div> <!-- End offer-post -->
+                            </div> <!-- End col-sm-4 -->
+
+                            <div class="col-sm-4">
+                                <div class="offer-post text-center animated out" data-animation="fadeInUp" data-delay="0">
+                                    <div class="offer-icon">
+                                        <span class="icon-mobile"></span>
+                                    </div>
+                                    <h4 localize-content>Nhà xưởng Đồng Vàng(535+Ext.)</h4>
+                                    <p localize-content>
+                                        Làm thẻ: 22372
+                                        Cổng A1: 22600/22634
+                                        Cổng A2 : 22696/22695
+                                        Cổng A3: 22412/22419
+                                    </p>
+                                </div> <!-- End offer-post -->
+                            </div> <!-- End col-sm-4 -->
+
+                            <div class="col-sm-4">
+                                <div class="offer-post text-center animated out" data-animation="fadeInRight" data-delay="0">
+                                    <div class="offer-icon">
+                                        <span class="icon-tablet"></span>
+                                    </div>
+                                    <h4>Nhà xưởng Quang Châu (535+Ext.)</h4>
+                                    <p>
+                                        Làm Thẻ: 30808
+                                        Cổng P1: 30311
+                                        Cổng P2: 30312
+                                        Cổng P3: 30237
+                                        Cổng Khu S: 30231
+                                        Cổng F2: 30806
+                                        Cổng F3: 30242
+                                        Cổng F1: 31973
+                                        Cổng F4: 31974
+                                        Cổng M1: 30804
+                                        Cổng M2: 31976
+                                        Cổng M3: 30803
+                                    </p>
+                                </div> <!-- End offer-post -->
+                            </div> <!-- End col-sm-4 -->
+
+                        </div> <!-- End row -->
+
+                    </div> <!-- End offer-boxes -->
+                </div> <!-- End container -->
+            </div> <!-- End landing-offer-section -->
+        </section>
+        <!-- End offer section -->
+        <section>
+            <div class="sep-section"></div>
+        </section>
+
+
+        <section>
+            <div id="subscribe-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                            <div class="newsletter-title text-center">
+                                <h4 localize-content>Stay informed with our newsletter</h4>
+                            </div> <!-- end newsletter-title -->
+                            <form class="form-inline subscription-form mailchimp" id="subscribeform">
+                                <!-- Subscription messages -->
+                                <h5 class="subscription-success"></h5>
+                                <h5 class="subscription-error"></h5>
+                                <!-- Email input -->
+                                <div class="form-group newsletter-field">
+                                    <input type="email" name="EMAIL" class="form-control" id="subscriber-email"
+                                           placeholder="abc@example.com">
+                                </div>
+                                <!-- Subscribe button -->
+                                <button type="submit" id="subscribe-button" class="btn btn-sm btn-dark">Subscribe</button>
+                            </form>
+                        </div> <!-- end col-sm-6 -->
+                    </div> <!-- end row -->
+                </div> <!-- end container -->
+            </div> <!-- end subscribe-section -->
+        </section>
+
+
+
+        <section>
+            <div class="sep-section"></div>
+        </section>
+
+
+
+        <section>
+            <div class="sep-section"></div>
+        </section>
+
+        <!-- Contact-info
+        ================================================== -->
+        <section>
+            <div class="contact-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="EXT:535+27299"><i class="pe-7s-phone"></i>EXT:535+27299</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="mailto:system-attwvn@mail.foxconn.com"><i class="pe-7s-mail"></i>system-attwvn@mail.foxconn.com</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="EXT:535+20770"><i class="pe-7s-phone"></i>EXT:535+20770</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-section" class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <ul class="footer-social-links">
+                                <li><a href="#" localize-content>Liên hệ</a></li>
+                                <li><a href="#" localize-content>Trợ giúp</a></li>
+                                <li><a href="#">Zalo</a></li>
+                            </ul>
+                            <br>
+                            <br>
+                            <div>
+                                <p localize-content>Nhân viên quản lý: Vũ Văn Hinh(EXT:535+27299/535+20770)</p><br>
+                                <p>Email: system-attwvn@mail.foxconn.com</p><br>
+                                <p localize-content>Nếu điện thoại không thể kết nối được.Bạn hãy gửi những bất thường đến hộp thư của Ban an toàn trung ương,chúng tôi sẽ xử lý và phản hồi trong thời gian ngắn nhất.</p>
+                                <br><p localize-content> Xin cảm ơn!</p>
+                            </div>
+                            <p class="copyright">
+                                &copy; 2022 - Created With <i id="heart" class="fa-solid fa-heart"></i> By
+                                <strong>ATTW</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+    </div> <!-- End wrapper -->
+    <!-- Back-to-top
+    ================================================== -->
+    <div class="back-to-top">
+        <i class="fa fa-angle-up fa-3x"></i>
+    </div>
+    <!-- end back-to-top -->
+    <!--------------dark mode-------------------->
+    <script src="~/assets/darkmode/darkmode-js.js"></script>
+
+    <script>
+        new Darkmode({
+            bottom: '20px',
+            right: '25px',
+            time: '0.5s',
+            label: '🌓'
+        }).showWidget();
+    </script>
+
+
+
+    <!-- JS libraries and scripts -->
+    <script src="~/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="~/assets/js/jquery.appear.min.js"></script>
+    <script src="~/assets/js/jquery.bxslider.min.js"></script>
+    <script src="~/assets/js/jquery.owl.carousel.min.js"></script>
+    <script src="~/assets/js/jquery.countTo.js"></script>
+    <script src="~/assets/js/jquery.easing.1.3.js"></script>
+    <script src="~/assets/js/jquery.imagesloaded.min.js"></script>
+    <script src="~/assets/js/jquery.isotope.js"></script>
+    <script src="~/assets/js/jquery.placeholder.js"></script>
+    <script src="~/assets/js/jquery.stellar.min.js"></script>
+    <script src="~/assets/js/jquery.waypoints.js"></script>
+    <script src="~/assets/js/jquery.fitvids.js"></script>
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/assets/js/jquery.countdown.js"></script>
+    <script src="~/assets/js/jquery.navbar-scroll.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/js/site.js"></script>
+
+
+    
+</body>
+
+</html>

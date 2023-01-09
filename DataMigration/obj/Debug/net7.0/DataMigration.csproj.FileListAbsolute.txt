@@ -1,0 +1,14 @@
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.csproj.AssemblyReference.cache
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.AssemblyInfoInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.AssemblyInfo.cs
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.csproj.CoreCompileInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\bin\Debug\net7.0\DataMigration.deps.json
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\bin\Debug\net7.0\DataMigration.runtimeconfig.json
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\bin\Debug\net7.0\DataMigration.dll
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\bin\Debug\net7.0\DataMigration.pdb
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.dll
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\refint\DataMigration.dll
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.pdb
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\DataMigration.genruntimeconfig.cache
+C:\Users\v0510589\source\repos\TestMvc\DataMigration\obj\Debug\net7.0\ref\DataMigration.dll

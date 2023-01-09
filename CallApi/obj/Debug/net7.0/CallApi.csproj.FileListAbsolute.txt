@@ -1,0 +1,12 @@
+C:\Users\v0510589\source\repos\TestMvc\CallApi\bin\Debug\net7.0\CallApi.deps.json
+C:\Users\v0510589\source\repos\TestMvc\CallApi\bin\Debug\net7.0\CallApi.dll
+C:\Users\v0510589\source\repos\TestMvc\CallApi\bin\Debug\net7.0\CallApi.pdb
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.csproj.AssemblyReference.cache
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.AssemblyInfoInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.AssemblyInfo.cs
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.csproj.CoreCompileInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.dll
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\refint\CallApi.dll
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\CallApi.pdb
+C:\Users\v0510589\source\repos\TestMvc\CallApi\obj\Debug\net7.0\ref\CallApi.dll

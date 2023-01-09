@@ -1,0 +1,12 @@
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\bin\Debug\net7.0\ViewModel.deps.json
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\bin\Debug\net7.0\ViewModel.dll
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\bin\Debug\net7.0\ViewModel.pdb
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.csproj.AssemblyReference.cache
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfoInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.AssemblyInfo.cs
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.dll
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\refint\ViewModel.dll
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ViewModel.pdb
+C:\Users\v0510589\source\repos\TestMvc\ViewModel\obj\Debug\net7.0\ref\ViewModel.dll

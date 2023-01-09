@@ -1,0 +1,78 @@
+﻿@*@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer localizer*@
+@inject LanguageService language
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title >@language.Getkey("home")</title>
+
+    <partial name="_ThemeStyles" />
+
+
+</head>
+
+<body>
+
+    <!-- Preload the Whole Page -->
+    <div id="preloader">
+        <div id="loading-animation">&nbsp;</div>
+    </div>
+
+    <partial name="_Navbar" />
+
+
+
+    <div id="wrapper">
+
+        <partial name="_Infor" />
+
+        @RenderBody()
+
+
+        <partial name="_Section" />
+
+        <section>
+            <div class="sep-section"></div>
+        </section>
+
+
+
+        <section>
+            <div class="sep-section"></div>
+        </section>
+
+        <!-- Contact-info
+        ================================================== -->
+        <section>
+            <div class="contact-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a href="EXT:535+27299"><i class="pe-7s-phone"></i>EXT:535+27299</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="mailto:system-attwvn@mail.foxconn.com"><i class="pe-7s-mail"></i>system-attwvn@mail.foxconn.com</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="EXT:535+20770"><i class="pe-7s-phone"></i>EXT:535+20770</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <partial name="_Footer" />
+
+    </div> <!-- End wrapper -->
+    <partial name="_ThemeScripts" />
+    @RenderSection("Scripts", required:false)
+</body>
+
+</html>
